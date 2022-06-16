@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel = "stylesheet" href="./css/formulario.css">
-    <title>Formulário</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <input id="menu-toggle" type="checkbox" />
-        <label for="menu-toggle">
-          <div class="menu-hamburger">
-            <span class="hamburger"></span>
-          </div>
-        </label>
-      </nav>
-    </header>
-    <main class="content">
-      <form method="POST" action="" enctype="multipart/form-data">
-        <fieldset>
-          <legend>Contato</legend>
-           <div>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="José" required /><br />        
-            <label for="email">E-mail: </label>
-            <input type="email" name="email" id="email" placeholder="jose@jose.com.br" required/>
-          </div>
-          <br />
-          <label>Sexo </label><br />
-          <input type="radio" id="fem" name="sexo" value="feminino" id="feminino" required/>
-          <label for="fem"> Feminino</label>
-          <input type="radio" id="masc" name="sexo" value="masculino" id="masculino" required/>
-          <label for="fem"> Masculino</label><br />
-          <label form="est"> Estado/Cidade: </label>
-          <select name="est" id="est"> 
-              <option></option>
-          </select> <br />
-          <label for="arquivo">Selecione um arquivo: </label>
-          <input type="file" name="arquivo[]" multiple /><br />
-          <label for="sugestao">Sugestão: </label>
-
-
-          </select>
-          <br />
-          <textarea name="mensagem"></textarea>
-          <br />
-          <button type="submit">Salvar</button>
-          <button type="reset">Limpar</button>
-        </fieldset>
-      </form>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+ 
+<body>
+    <main>
+        <form method="post" action="">
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="José" required>
+                <br />
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="jose@jose.com.br" required>
+                <br />
+                <input type="radio" name="sexo" id="Masculino" value="Masculino">
+                <label for="sexo">Masculino</label>
+                <input type="radio" name="sexo" id="Feminino" value="Feminino">
+                <label for="sexo">Feminino</label>
+                <br />
+                <label for="estados">Estados/Cidade:</label>
+                <select name="estados" id="estados" required>
+                    <option></option>
+                    <option value="1">MG</option>
+                    <option value="2">SP</option>
+                    <option value="3">RJ</option>
+                </select>
+                <input type="text" name="cidade" id="cidade" required>
+                <br />
+                <label for="arquivo">Selecione um arquivo</label>
+                <input type="file" name="arquivo" id="arquivo" required />
+                <br />
+                <label for="sugestao">Sugestão:</label>
+                <br />
+                <textarea name="sugestao" id="sugestao" required></textarea>
+                <br />
+                <picture>
+                    <input type="image" src="./img/enviar-black.png">
+            </fieldset>
+        </form>
     </main>
-    <footer>
-      </div>
-    </footer>
-  </body>
+</body>
+ 
 </html>
