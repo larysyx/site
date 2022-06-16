@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap");
+
+* {
+  font-family: "Josefin Sans";
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --primary: #f49300;
+  --primary-light: #ffc266;
+  --secondary: #f9f9f9;
+  --black: #000000;
+  --white: #ffffff;
+  --purple: #e9ddf2;
+}
+
+header {
+  background-color: var(--primary);
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header picture {
+  margin-left: 3rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#caderninho {
+  margin-left: -4rem;
+  margin-top: 6rem;
+  position: absolute;
+  height: 4.2rem;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+header nav div {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--secondary);
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 118.5px;
+}
+
+header nav div input {
+  border: var(--secondary);
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: var(--black);
+  background-color: var(--secondary);
+  padding: 1rem 2rem;
+  border-radius: 146px;
+}
+
+/* MAIN INDEX */
+
+.indexMain {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+}
+
+.indexMain ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+.indexMain ul li h1 {
+  margin: 1.5rem;
+  padding: 2rem;
+  background-color: var(--primary-light);
+  border-radius: 146px;
+}
+
+.indexMain .divContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.indexMain .divContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--purple);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 69px;
+}
+
+.indexMain .divContainer div h1 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.indexMain .divContainer div img {
+  justify-content: center;
+  height: 10rem;
+  border-radius: 66px;
+}
+
+/* MAIN LOGIN */
+
+.loginMain .divLoginBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto auto;
+}
+
+.loginMain .divLoginBack .divLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: var(--primary-light);
+  width: 80%;
+  border-radius: 124px;
+  margin: 0 5rem 5rem 2rem;
+}
+
+.loginMain .divLoginBack .divLogin .loginForm {
+  background-color: var(--secondary);
+  padding: 2rem 5rem 5rem;
+  border-radius: 79px;
+  display: block;
+}
+
+.loginForm div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.loginForm #bonequinho {
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm #bonequinho img {
+  width: 50%;
+}
+
+.loginForm div input {
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  border: 0;
+  background-color: #f49300b5;
+  border-radius: 119px;
+}
+
+.loginMain .divLoginBack picture {
+  flex-direction: column;
+  margin-left: 1.5rem;
+  width: 8%;
+}
+
+.loginMain #caderninho {
+    margin-left: 9rem;
+    margin-top: 7rem;
+    position: absolute;
+    height: 10rem;
+  }
+
+.loginForm #botao {
+  justify-content: center;
+}
+
+.loginForm div button {
+  background-color: #f49300b5;
+  border: 0;
+  padding: 1rem 3rem;
+  border-radius: 119px;
+  margin: 0 2rem;
+}
+
+.loginForm ul {
+  list-style: none;
+  margin-top: 0.3rem;
+}
+
+.loginForm ul li {
+  padding: 0.5rem 0;
+}
+
+.loginForm ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.5;
+}
+
+.loginMain picture img {
+  padding: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var();
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
