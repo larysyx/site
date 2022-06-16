@@ -94,6 +94,11 @@ header nav input#menu-toggle {
       span.hamburger:after {
       bottom: 0px;
     }
+
+    form fieldset picture input{
+      height: 1rem;
+  }
+  
     @keyframes fade-in {
       from {
         opacity: 0;
